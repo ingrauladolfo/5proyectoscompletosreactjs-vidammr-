@@ -78,7 +78,11 @@ export default function Todo({ item, onUpdate, onComplete, onDelete }) {
               >
                 {item.title}
               </span>
-              <button className="button" onClick={() => setIsEdit(true)}>
+              <button
+                className="button"
+                onClick={() => setIsEdit(true)}
+                disabled
+              >
                 Update
               </button>
               <button
